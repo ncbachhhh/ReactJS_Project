@@ -48,7 +48,9 @@ function SignUp() {
     if (password !== repassword) {
       setPassword("");
       setRePassword("");
-      return setMessage("Password and confirm password fields must be the same.");
+      setMessage("Password and confirm password fields must be the same.");
+      console.log(message);
+      return false;
     }
   };
 
@@ -57,6 +59,8 @@ function SignUp() {
 
     if (username.length < 8) {
       setMessage("Username must be at least 8 characters");
+      console.log(message);
+      return false;
     }
   };
 
@@ -80,17 +84,28 @@ function SignUp() {
         checkSpecialChars = true;
       }
     }
-    if (!checkUpperCase && !checkNum && !checkSpecialChars) {
-      return setMessage("Password must be include an uppercase letter, a number, and a special character.");
+    console.log(checkUpperCase);
+    console.log(checkNum);
+    console.log(checkSpecialChars);
+    if (checkUpperCase === false || checkNum === false || checkSpecialChars === false) {
+      setMessage("Password must be include an uppercase letter, a number, and a special character.");
+      console.log(message);
+      return false;
     }
   };
 
   const checkSignUp = (e) => {
     e.preventDefault();
-    setMessage("");
-    checkRePass();
-    checkUsername();
-    checkPassword();
+    if ( checkRePass() === false ) {
+      return message;
+    }
+    if ( checkUsername() === false ) {
+      return message;
+    }
+    if ( checkPassword() === false ) {
+      return message;
+    }
+  
     for (let i = 0; i < list_User.length; i++) {
       if (username === list_User[i].username) {
         return setMessage("Account already exists. Please try another username.");
@@ -99,17 +114,22 @@ function SignUp() {
         return setMessage("Account already exists. Please try another email.");
       }
     }
-    let newUser = {
-      playlist: [],
-      username: username,
-      email: email,
-      password: password,
-      role: role,
-      id: new Date(),
-    };
-    setListUser([...list_User, newUser]);
-    localStorage.setItem("list_User", JSON.stringify([...list_User, newUser]));
-    navigate("/");
+    if (message === "") {
+      let newUser = {
+        playlist: [],
+        username: username,
+        email: email,
+        password: password,
+        role: role,
+        id: new Date(),
+        premium: "Member",
+        end_premium: "unlimited",
+        album: [],
+      };
+      setListUser([...list_User, newUser]);
+      localStorage.setItem("list_User", JSON.stringify([...list_User, newUser]));
+      navigate("/");
+    }
   };
 
   return (
