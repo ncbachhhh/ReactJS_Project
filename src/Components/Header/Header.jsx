@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { FaSearch } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import AlbumsData from "../../Data/AlbumsData";
 import "./Header.css";
 
@@ -134,7 +134,7 @@ function Header({ setIsLoading, setCurrentSong, setIsPlaying }) {
       <div className="nav-links">
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <a href="#premium">Premium</a>
+        <NavLink to="/premium">Premium</NavLink>
         {loginStatus ? (
           <div className="avatar">
             <i

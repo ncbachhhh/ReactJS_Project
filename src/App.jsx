@@ -18,6 +18,10 @@ import SongsData from "./Data/SongsData";
 import AlbumsData from "./Data/AlbumsData";
 import LoadingPage from "./Components/LoadingPage/LoadingPage";
 import JoinOurPlatform from "./Components/JoinOurPlatform/JoinOurPlatform";
+import Premium from "./Components/Premium/Premium";
+import PurchasePro from "./Components/PurchasePro/PurchasePro";
+import PurchasePlus from "./Components/PurchasePlus/PurchasePlus";
+import Payment from "./Components/Payment/Payment";
 import "./App.css";
 
 function App() {
@@ -71,9 +75,13 @@ function App() {
             <Route path="mostPlayed" element={<MostPlayedHit onSongPlay={handleSongPlay} />} />
             <Route path="recentlyAdded" element={<RecentlyAdded />} />
             <Route path="settings" element={<Setting />} />
+            <Route path="/premium" element={<Premium />}></Route>
+            <Route path="/premium/purchase_plus" element={<PurchasePlus />}></Route>
+            <Route path="/premium/purchase_pro" element={<PurchasePro />}></Route>
+            <Route path="/payment" element={<Payment />}></Route>
           </Route>
-          <Route path="/albums" element={<Albums setIsLoading={setIsLoading} setIsPlaying={setIsPlaying} handleSongPlay={handleSongPlay} setCurrentSong={setCurrentSong}/>}/>
-          <Route path="/artists" element={<Artists setIsLoading={setIsLoading} setIsPlaying={setIsPlaying} handleSongPlay={handleSongPlay} setCurrentSong={setCurrentSong}/>} />
+          <Route path="/albums" element={<Albums setIsLoading={setIsLoading} setIsPlaying={setIsPlaying} handleSongPlay={handleSongPlay} setCurrentSong={setCurrentSong} />} />
+          <Route path="/artists" element={<Artists setIsLoading={setIsLoading} setIsPlaying={setIsPlaying} handleSongPlay={handleSongPlay} setCurrentSong={setCurrentSong} />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/join" element={<JoinOurPlatform setIsLoading={setIsLoading} isLoading={isLoading} />} />

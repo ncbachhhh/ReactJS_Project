@@ -16,6 +16,7 @@ function Home() {
     password: "admin",
     role: "admin",
     id: "admin",
+    premium: "Pro",
   };
   
   // check key trong local
