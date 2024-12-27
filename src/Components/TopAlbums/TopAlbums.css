@@ -1,0 +1,61 @@
+.top-albums-container {
+  padding: 20px;
+  color: #fff;
+}
+
+.section-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.section-titlee .highlight {
+  color: #007bff; /* Màu nổi bật cho chữ "Albums" */
+}
+
+.albums-list {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.album-item {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.album-item > img {
+  width: 100%;
+}
+
+.album-item:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.album-cover {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.album-info {
+  margin-top: 10px;
+}
+
+.album-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+
+.album-artist {
+  font-size: 0.8em;
+  color: #aaa;
+  margin: 0;
+}

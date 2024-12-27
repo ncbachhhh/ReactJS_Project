@@ -1,0 +1,63 @@
+/* Đảm bảo html và body chiếm toàn bộ màn hình */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* CSS cho phần loading-page */
+.loading-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* Giữ cố định trên màn hình */
+  top: 0;
+  left: 0;
+  height: 100%; /* Chiều cao toàn màn hình */
+  width: 100%; /* Chiều rộng toàn màn hình */
+  background-image: url("./8c72b77a308bd517b640b1a903243530f978bee46eed8f4d9e82095ee3113485.png");
+  background-size: auto; /* Đảm bảo ảnh phủ kín toàn màn hình */
+  background-position: center; /* Căn giữa ảnh */
+  background-repeat: repeat; /* Không lặp lại ảnh */
+  color: #fff;
+  flex-direction: column;
+}
+
+/* Văn bản "Loading" */
+.loading-text {
+  font-size: 2em;
+  color: #fff;
+  margin-top: 50px;
+  animation: blink 0.8s infinite; /* Hiệu ứng nhấp nháy cho chữ "Loading" */
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Bộ quay (spinner) */
+.spinner {
+  margin-top: 10px;
+  border: 4px solid #fff;
+  border-top: 4px solid #ee10b0; /* Màu hồng cho viền trên */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

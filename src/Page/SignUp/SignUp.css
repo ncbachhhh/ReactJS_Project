@@ -1,0 +1,101 @@
+.sign-up-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3b2b3d; /* Nền mờ */
+  color: #fff;
+}
+
+.sign-up-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 40vw;
+  background-color: #4a3a4c;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sign-up-container > form {
+  width: 80%;
+}
+
+.back-button {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.logo-image {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.logo-text {
+  font-size: 1.5em;
+  color: #ee10b0;
+  margin-bottom: 20px;
+}
+
+.sign-up-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  background-color: #5a4a5c;
+  border: none;
+  border-radius: 5px;
+  color: #ddd;
+}
+
+.show-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #ddd;
+}
+
+.create-account-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ee10b0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-account-button:hover {
+  background-color: #ff4dc4;
+}
+
+.success-message {
+  margin-top: 20px;
+  font-size: 1em;
+  text-align: center;
+  color: red;
+}

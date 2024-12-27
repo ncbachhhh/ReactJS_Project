@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Vazirmatn;
+}
+
+.app {
+  display: flex;
+  background-color: #3b2b3d;
+  height: 100vh;
+  color: #fff;
+}
+
+.content {
+  margin-left: 250px; /* Đảm bảo phần nội dung chính không bị che bởi sidebar */
+  padding: 20px;
+  overflow-y: auto;
+}

@@ -1,0 +1,112 @@
+.trending-songs-container {
+  padding: 20px;
+  color: #fff;
+}
+
+.section-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.section-title .highlight {
+  color: #ee10b0;
+}
+
+.trending-songs-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0px 10px;
+}
+
+tr {
+  border-radius: 10px;
+}
+
+.trending-songs-table thead th {
+  text-align: left;
+  padding: 10px;
+  color: #eee;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+.trending-songs-table tbody td {
+  padding: 10px;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 0.9em;
+  border-top: 1px solid #444;
+}
+
+.trending-songs-table tbody tr {
+  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease;
+  /* border-radius: 10px; */
+}
+
+.trending-songs-table > tbody > tr:hover {
+  background-color: #333;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.song-info-trending {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.trending-song-cover {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.song-info strong {
+  display: flex;
+  font-size: 1em;
+  color: #fff;
+}
+
+.song-info span {
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+.song-time {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.heart-icon {
+  color: #ee10b0;
+  font-size: 0.9em;
+}
+
+.view-all-btn {
+  background-color: #222;
+  color: #fff;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  width: 150px;
+  margin: 20px auto 0;
+}
+
+.view-all-btn:hover {
+  background-color: #ee10b0;
+  color: #fff;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,10 @@
+p {
+  margin: 0;
+}
+.album-info-list {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.album-info-list:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,31 @@
+.artist-album-container {
+  margin-top: 20px;
+}
+
+.artist-list-item {
+  background-color: rgba(31, 31, 31, 1);
+  border-radius: 10px;
+  padding: 5px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.artist-list-item:hover {
+  transform: scale(1.05);
+}
+.artist-list-info {
+  padding: 10px;
+}
+.artist-list-cover {
+  width: 13vw;
+}
+.artist-list-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.artist-list-description {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18.75px;
+  margin: 0;
+}

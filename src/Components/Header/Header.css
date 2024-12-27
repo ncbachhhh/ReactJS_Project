@@ -1,0 +1,232 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #444;
+  font-size: 18px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 5px 10px;
+  width: 50%;
+}
+
+.search-icon {
+  color: #aaa; /* Màu icon */
+  margin-right: 10px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Khoảng cách giữa các liên kết và avatar */
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.login-btn,
+.signup-btn {
+  margin-left: 10px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 115px;
+}
+
+.login-btn {
+  background-color: #222;
+  color: #ee10b0;
+}
+
+.signup-btn {
+  background-color: #ee10b0;
+  color: black;
+}
+
+/* Nút Login và Sign Up */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.auth-button {
+  background-color: #ee10b0;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.auth-button:hover {
+  background-color: #00aaff;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ee10b0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+}
+
+.search-results {
+  position: absolute;
+  top: 60px; /* Điều chỉnh tùy vào vị trí của thanh tìm kiếm */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.search-results ul {
+  list-style: none;
+  padding: 0;
+}
+
+.search-results li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Modal tìm kiếm */
+.header-search-modal {
+  position: fixed;
+  top: 72px;
+  left: 44vw;
+  transform: translateX(-50%);
+  background-color: #333;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 810px;
+  max-height: 500px;
+  overflow-y: auto;
+  z-index: 100;
+  padding: 20px;
+  color: #fff;
+}
+
+.header-search-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #444;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.header-search-modal-header p {
+  font-size: 16px;
+  color: #aaa;
+}
+
+.header-close-modal-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.header-search-query {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 15px;
+}
+
+.header-search-results ul {
+  list-style: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.header-search-results li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.header-song-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-song-cover {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.header-song-details h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.header-song-details p {
+  margin: 0;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.header-search-results .no-results-message {
+  text-align: center;
+  color: #bbb;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,16 @@
+.also-listen-to-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.also-listen-to-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.also-listen-to-item > p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 31.25px;
+}

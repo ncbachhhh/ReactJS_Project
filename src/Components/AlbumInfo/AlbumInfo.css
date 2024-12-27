@@ -1,0 +1,68 @@
+.album-info-container {
+  background: linear-gradient(90.22deg, #0a4690 12.99%, rgba(83, 173, 214, 0.023) 112.49%, rgba(139, 203, 231, 0) 114.84%);
+  width: 80vw;
+  border-radius: 10px;
+}
+.album-info-title {
+  background: linear-gradient(90.22deg, #1171e2 12.99%, rgba(83, 173, 214, 0.0230101) 112.49%, rgba(139, 203, 231, 0) 114.84%);
+  box-shadow: 3px 12px 4px 0px rgba(0, 0, 0, 0.3);
+  padding: 30px 40px 40px 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.album-info-title-header > div > a {
+  color: white;
+  text-decoration: none;
+}
+.album-info-name {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.album-info-name > p:nth-child(1) {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 62.5px;
+}
+.album-info-name > p:nth-child(2) {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 31.25px;
+}
+
+.album-info-name > p > span {
+  color: rgba(238, 16, 176, 1);
+}
+.album-info-play-all {
+  color: rgba(238, 16, 176, 1);
+  cursor: pointer;
+}
+.album-info-play-all > h3 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 37.5px;
+  transform: translateY(20%);
+}
+.album-info-content {
+  padding: 20px 30px 20px 20px;
+}
+thead > td:nth-child(4) {
+  text-align: center;
+}
+.album-info-list > td:nth-child(2),
+.album-info-list > td:nth-child(3),
+.album-info-list > td:nth-child(4),
+.album-info-list > td:nth-child(5) {
+  background-color: rgba(30, 30, 30, 1);
+}
+.album-info-list > td:nth-child(2) {
+  border-radius: 10px 0px 0px 10px;
+}
+.album-info-list > td:nth-child(4) {
+  text-align: center;
+}
+.album-info-list > td:nth-child(5) {
+  border-radius: 0px 10px 10px 0px;
+}

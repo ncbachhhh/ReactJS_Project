@@ -1,0 +1,72 @@
+.join-platform-container {
+  background-color: #3b2b3d;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.join-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.join-description {
+  font-size: 1.2em;
+  color: #ddd;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  max-width: 750px;
+}
+
+.highlight-member {
+  color: #ee10b0; /* Màu hồng nổi bật cho từ "members" */
+}
+
+.highlight-login {
+  color: #00bfff; /* Màu xanh nổi bật cho từ "Login" */
+  text-decoration: none;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -90px;
+  margin-right: 50px;
+  gap: 30px;
+}
+
+.signup-button {
+  background-color: #ee10b0;
+  color: black;
+  border: none;
+  padding: 15px 50px;
+  font-size: 1.5em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+}
+
+.signup-button:hover {
+  background-color: #ee10b0; /* Màu khi hover cho nút "Sign Up" */
+  box-shadow: 0px 0px 15px rgba(238, 16, 176, 0.5);
+}
+
+.login-button {
+  background-color: #222;
+  color: #ee10b0;
+  border: none;
+  padding: 15px 50px;
+  font-size: 1.5em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
+}
+
+.login-button:hover {
+  background-color: #333; /* Màu khi hover cho nút "Login" */
+}

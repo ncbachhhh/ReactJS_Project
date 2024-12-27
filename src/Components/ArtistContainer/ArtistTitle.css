@@ -1,0 +1,31 @@
+.artist-title-container {
+  /* background: linear-gradient(90.22deg, #0c0b0b 12.99%, rgba(0, 0, 0, 0.0230101) 114.84%); */
+  background: linear-gradient(90.22deg, rgba(20, 20, 20, 1) 12.99%,  rgba(0, 0, 0, 0.1) 114.84% );
+  width: 80vw;
+  border-radius: 10px;
+}
+.artist-title {
+  /* background-image: url("./Rectangle 37.png"); */
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 40px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.artist-title-header > div > a {
+  color: white;
+  text-decoration: none;
+}
+.artist-title-des {
+  font-size: 96px;
+  font-weight: 900;
+  line-height: 150px;
+}
+.artist-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

@@ -1,0 +1,182 @@
+/* Đảm bảo LoginPage chiếm toàn bộ màn hình */
+.login-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Chiều rộng toàn màn hình */
+  height: 100vh; /* Chiều cao toàn màn hình */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3b2b3d;
+  color: #fff;
+  z-index: 1000; /* Đảm bảo nó nằm trên các phần tử khác */
+}
+
+/* Container của form đăng nhập */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 40vw;
+  background-color: #4a3a4c;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-container > form {
+  width: 80%;
+}
+
+/* Logo styling */
+.logo-image-login {
+  width: 5vw;
+  margin-bottom: 10px;
+}
+
+.logo-text {
+  font-size: 1.5em;
+  color: #ee10b0;
+  margin-bottom: 20px;
+}
+
+/* Title styling */
+.login-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Input fields styling */
+.input-group {
+  width: 100%; 
+}
+
+.input-field-login {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: #5a4a5c;
+  border: none;
+  border-radius: 5px !important;
+  color: #ddd;
+}
+
+/* .show-password {
+  position: absolute;
+  right: 10px;
+  top: 40%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #ddd;
+} */
+.showPass {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+/* Forgot password styling */
+.forgot-password {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #ddd;
+  margin-bottom: 20px;
+  cursor: pointer;
+  width: auto;
+  text-decoration: underline;
+}
+
+/* Login button styling */
+.loginn-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ee10b0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+.loginn-button:hover {
+  background-color: #ff4dc4;
+}
+
+/* Social login buttons styling */
+.social-login {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.google-login,
+.facebook-login {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  font-size: 0.9em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #ddd;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.google-login:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.facebook-login:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Signup section styling */
+.signupp-section {
+  text-align: center;
+}
+
+.signupp-section p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #ddd;
+}
+
+.signupp-button {
+  margin-top: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #00bfff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signupp-button:hover {
+  background-color: #33ccff;
+}
+
+.back-home-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #00bfff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-home-button:hover {
+  background-color: #33ccff;
+}

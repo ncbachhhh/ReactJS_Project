@@ -1,0 +1,168 @@
+.music-player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d0b14;
+  color: #fff;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 1000;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Phần thông tin bài hát */
+.music-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1; /* Chia đều khoảng không gian */
+  min-width: 200px; /* Đặt giới hạn tối thiểu */
+}
+
+.music-cover {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.song-details {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap; /* Giữ chữ trên một dòng */
+  overflow: hidden; /* Giới hạn văn bản vượt quá */
+  text-overflow: ellipsis; /* Thêm dấu "..." khi quá dài */
+}
+
+.song-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  color: #fff;
+}
+
+.song-artist {
+  font-size: 12px;
+  color: #ccc;
+  margin: 0;
+}
+
+/* Phần player-controls cố định ở giữa */
+.player-controls {
+  position: absolute; /* Căn giữa tuyệt đối */
+  left: 50%;
+  transform: translateX(-50%); /* Đưa về giữa */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Nút điều khiển */
+.control-button {
+  cursor: pointer;
+  font-size: 18px; /* Kích thước mặc định cho tất cả biểu tượng */
+  color: #fff;
+  transition: color 0.3s ease, transform 0.2s ease;
+  outline: none; /* Xóa viền focus mặc định */
+  -webkit-user-select: none; /* Vô hiệu hóa việc chọn text */
+  user-select: none; /* Xóa khả năng focus text */
+  -webkit-appearance: none; /* Xóa style mặc định trên Chrome/Safari */
+  -moz-appearance: none; /* Xóa style mặc định trên Firefox */
+  border: none; /* Xóa viền mặc định */
+}
+
+.control-button:hover {
+  color: #ee10b0; /* Màu khi di chuột */
+}
+
+.control-button:focus {
+  outline: none; /* Xóa viền khi focus */
+  box-shadow: none; /* Xóa hiệu ứng shadow khi focus */
+}
+
+.control-button.active {
+  color: #ee10b0; /* Màu sắc khi được kích hoạt */
+  transition: all 0.3s ease;
+}
+
+/* Điều chỉnh âm lượng */
+.volume-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.volume-slider {
+  width: 100px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #444;
+  height: 5px;
+  border-radius: 5px;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #ee10b0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/* Thanh timeline */
+.timeline-container {
+  position: absolute; /* Đặt vị trí tuyệt đối */
+  bottom: 0; /* Đặt ở cạnh dưới của trình phát */
+  left: 50%;
+  transform: translateX(-50%); /* Căn giữa theo chiều ngang */
+  display: flex;
+  align-items: center;
+  width: 80%; /* Chiều rộng của timeline */
+  max-width: 600px;
+  margin: 0 auto; /* Căn giữa */
+  padding: 5px 0; /* Tạo khoảng cách giữa timeline và các thành phần khác */
+}
+
+.timeline {
+  flex-grow: 1;
+  appearance: none; /* Xóa style mặc định của trình duyệt */
+  background: #444;
+  height: 5px;
+  border-radius: 5px;
+  margin: 0 10px; /* Tạo khoảng cách giữa thời gian và thanh timeline */
+  cursor: pointer;
+  outline: none; /* Xóa viền focus mặc định */
+}
+
+.timeline:focus {
+  outline: none; /* Xóa viền khi focus */
+  box-shadow: none; /* Xóa hiệu ứng shadow khi focus */
+}
+
+.timeline::-webkit-slider-thumb {
+  appearance: none;
+  background: #fff;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.timeline::-moz-range-thumb {
+  background: #fff;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.time {
+  font-size: 12px;
+  color: #bbb;
+}

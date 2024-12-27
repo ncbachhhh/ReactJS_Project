@@ -1,0 +1,124 @@
+.sidebar {
+  width: 250px; /* Điều chỉnh độ rộng */
+  height: 90vh; /* Chiều cao toàn màn hình */
+  position: fixed; /* Giữ sidebar ở vị trí cố định khi cuộn */
+  top: 0; /* Căn chỉnh ở đỉnh màn hình */
+  left: 0; /* Căn chỉnh ở phía bên trái */
+  background-color: #1b1b32;
+  padding: 20px;
+  color: #aaa;
+  overflow-y: auto; /* Đảm bảo có thể cuộn sidebar khi nội dung vượt quá */
+  box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước */
+}
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ee10b0, #8b0ee1, #3b82f6); /* Gradient với nhiều điểm màu */
+  -webkit-background-clip: text; /* Clip gradient vào phần chữ (Safari) */
+  background-clip: text; /* Clip gradient vào phần chữ (Chrome, Firefox) */
+  color: transparent; /* Đặt màu chữ trong suốt để lộ gradient */
+  margin-bottom: 20px;
+  display: inline-block; /* Đảm bảo gradient chỉ áp dụng cho phần chữ */
+}
+
+.menu h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #ee10b0; /* Subtle color for section headers */
+  text-transform: uppercase;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px; /* Increase space between sections */
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #b8b8d4; /* Default text color */
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+.menu li svg {
+  margin-right: 10px;
+  transition: transform 0.3s; /* Smooth icon transition */
+}
+
+.menu li:hover {
+  background: linear-gradient(90deg, #ee10b0, #ee10b0); /* Gradient giống như phần Home */
+  border-radius: 10px;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(240, 91, 181, 0.7); /* Hiệu ứng ánh sáng giống Home */
+}
+
+.menu li:hover svg {
+  transform: scale(0.9); /* Scale down icon on hover */
+}
+
+.menu li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu .logout {
+  color: #ee10b0; /* Distinct color for logout */
+}
+
+.menu .logout:hover {
+  color: #ffffff;
+  background-color: #ee10b0;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.logo-link {
+  text-decoration: none; /* Loại bỏ gạch chân khi hover */
+  color: inherit; /* Giữ nguyên màu sắc của logo */
+}
+.link {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  width: 100%; /* Bao phủ toàn bộ chiều rộng của li */
+  box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước */
+}
+
+.link.active {
+  background-color: #ee10b0; /* Màu sáng cho mục đang được chọn */
+  color: #fff; /* Màu chữ sáng */
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu .logout {
+  color: #ee10b0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  font-size: 16px;
+}
+
+.menu .logout:hover {
+  color: #ffffff;
+  background-color: #ee10b0;
+  border-radius: 10px;
+}

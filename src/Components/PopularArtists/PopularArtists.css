@@ -1,0 +1,50 @@
+.popular-artists-container {
+  padding: 20px;
+  color: #fff;
+}
+
+.section-title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.section-title .highlight {
+  color: #ee10b0; /* Màu hồng nổi bật */
+}
+
+.artists-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+}
+
+.artist-item {
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.artist-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+  transition: transform 0.3s ease;
+}
+
+.artist-image:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.artist-name {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #fff;
+}

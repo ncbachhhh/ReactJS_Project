@@ -1,0 +1,54 @@
+.music-genres-container {
+  padding: 20px;
+  color: #fff;
+}
+
+.section-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px; /* Tăng khoảng cách giữa tiêu đề và ảnh */
+}
+
+.section-title .highlight {
+  color: #ee10b0; /* Màu nổi bật cho chữ "Genres" */
+}
+
+.genres-list {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.genre-item {
+  position: relative;
+  width: 100%; /* Tùy chỉnh kích thước theo nhu cầu */
+  height: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.genre-item:hover {
+  transform: scale(1.05);
+}
+
+.genre-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(1.1); /* Tạo hiệu ứng tối cho ảnh */
+}
+
+.genre-title {
+  position: absolute;
+  top: 90%; /* Đưa chữ vào giữa ảnh theo chiều dọc */
+  left: 50%; /* Đưa chữ vào giữa ảnh theo chiều ngang */
+  transform: translate(-50%, -50%); /* Căn giữa tuyệt đối */
+  color: #fff;
+  font-size: 2em;
+  font-family: "Just Another Hand", cursive;
+  text-align: center; /* Căn giữa chữ nếu có nhiều dòng */
+}
+
