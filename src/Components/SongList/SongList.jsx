@@ -2,8 +2,10 @@ import React from "react";
 import { FaMusic } from "react-icons/fa"; // Import biểu tượng âm nhạc từ react-icons
 import "./SongList.css";
 import { NavLink, useNavigate } from "react-router-dom";
+import AlbumsData from "../../Data/AlbumsData";
 
-function SongList() {
+function SongList(props) {
+  const { handleSongPlay } = props;
   // Dữ liệu giả cho danh sách bài hát
   const songs = [
     {
@@ -40,7 +42,14 @@ function SongList() {
       </h2>
       <div className="song-list">
         {songs.map((song, index) => (
-          <div className="song-item" key={index}>
+          <div
+            className="song-item"
+            key={index}
+            onClick={() => {
+              console.log(AlbumsData.filter((item) => item.title === song.title));
+              handleSongPlay(AlbumsData.filter((item) => item.title === song.title)[0]);
+            }}
+          >
             <img src={song.cover} alt={song.title} className="song-cover" />
             <div className="song-info">
               <h3 className="song-title">{song.title}</h3>
@@ -52,7 +61,9 @@ function SongList() {
           </div>
         ))}
         <div className="view-all">
-          <NavLink to='/albums' style={{textDecoration: 'none', color: 'white'}}><div className="view-all-icon">+</div></NavLink>
+          <NavLink to="/albums" style={{ textDecoration: "none", color: "white" }}>
+            <div className="view-all-icon">+</div>
+          </NavLink>
           <p>View All</p>
         </div>
       </div>

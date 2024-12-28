@@ -455,6 +455,78 @@ const albums = [
     mp3: "./audio/Rolling in the Deep.mp3",
   },
   {
+    title: "Superman",
+    artist: "Eminem",
+    cover: "./3fbe0a9c093defb1d0a80e4d7c9a22e9.jpg",
+    mp3: "./audio/Superman.mp3",
+  },
+  {
+    title: "Softcore",
+    artist: "The Neighborhood",
+    cover: "./928539efe5b5bc249fc7c4bc8c666070.jpg",
+    mp3: "./audio/The Neighbourhood - Softcore (Lyrics).mp3",
+  },
+  {
+    title: "The Loneliest",
+    artist: "Måneskin",
+    cover: "./271f7c93fea64fd739895dee8834755d.jpg",
+    mp3: "./audio/Måneskin - The Loneliest (Lyrics).mp3",
+  },
+  {
+    title: "Time",
+    artist: "Luciano",
+    cover: "./8010b66da47b5371bdf7f6657d47d492.jpg",
+    mp3: "./audio/LUCIANO - Time.mp3",
+  },
+  {
+    title: "112",
+    artist: "jazzeek",
+    cover: "./5bf52a4bf5eebcca6696da7edddd8dc2.png",
+    mp3: "./audio/Jazeek - 112 (Official Video).mp3",
+  },
+  {
+    title: "We don’t care",
+    artist: "Kyanu & DJ Gollum",
+    cover: "./156cba04dab27b5d20c11682d3fd43ee.jpg",
+    mp3: "./audio/We+Don&#39;t+Care.mp3",
+  },
+  {
+    title: "Who I Am",
+    artist: "Alan Walker & Elias",
+    cover: "./a4e363e99f9028a01447aafccb2cf1ff.jpg",
+    mp3: "./audio/api5.canehill.info - Alan Walker - Who I Am (Lyrics).mp3",
+  },
+  {
+    title: "Baixo",
+    artist: "XXAnteria",
+    cover: "./dbc71d86a38201b61d24b0674b5e680c.jpg",
+    mp3: "./audio/xxanteria - BAIXO.mp3",
+  },
+  {
+    title: "Bad Guy",
+    artist: "Billie Eilish",
+    cover: "./772a8122dc26a4eec94be1beca1eb5ca.jpg",
+    mp3: "./audio/Billie Eilish - bad guy.mp3",
+  },
+  {
+    cover: "./ngang-2-1713617550644143367093.webp",
+    artist: "Taylor Swift",
+    title: "Shake It Off",
+    mp3: "./audio/shake-it-off-taylor-swift-lyrics-shawn-mendes-camila-cabello-jonas-blue-onerepublic-128-ytshorts.savetube.me.mp3",
+  },
+  {
+    cover: "./Rose-Bruno-Mars-2C2.jpg",
+    artist: "Rosé & Bruno Mars",
+    title: "APT",
+    mp3: "./audio/ROSÉ & Bruno Mars - APT. (Lyrics).mp3",
+  },
+  {
+    cover: "./ca-si-justin-bieber-16582480887271375335734.webp",
+    artist: "Justin Bieber",
+    title: "STAY",
+    mp3: "./audio/The Kid LAROI Justin Bieber  STAY Official Video.mp3",
+  },
+  {
     rank: "1",
     title: "Without Me",
     artist: "Eminem",
@@ -462,7 +534,7 @@ const albums = [
     played: "21,215,618",
     time: "3:26",
     cover: "./eminem1.png",
-    mp3: "./audio/Eminem  Without Me Official Music Video.mp3"
+    mp3: "./audio/Eminem  Without Me Official Music Video.mp3",
   },
   {
     rank: "2",
@@ -472,7 +544,7 @@ const albums = [
     played: "19,856,112",
     time: "2:45",
     cover: "./eminem2.png",
-    mp3: "./audio/eminem-mockingbird-official-music-video-128-ytshorts.savetube.me.mp3"
+    mp3: "./audio/eminem-mockingbird-official-music-video-128-ytshorts.savetube.me.mp3",
   },
   {
     rank: "3",
@@ -482,7 +554,7 @@ const albums = [
     played: "16,564,223",
     time: "2:11",
     cover: "./eminem3.png",
-    mp3: "./audio/Eminem - The Real Slim Shady (Official Video - Clean Version).mp3"
+    mp3: "./audio/Eminem - The Real Slim Shady (Official Video - Clean Version).mp3",
   },
   {
     rank: "4",
@@ -492,7 +564,7 @@ const albums = [
     played: "16,240,390",
     time: "2:18",
     cover: "./eminem4.png",
-    mp3: "./audio/Eminem - Lose Yourself.mp3"
+    mp3: "./audio/Eminem - Lose Yourself.mp3",
   },
   {
     rank: "5",
@@ -502,7 +574,7 @@ const albums = [
     played: "14,367,500",
     time: "3:51",
     cover: "./eminem5.png",
-    mp3: "./audio/Eminem - Godzilla ft. Juice WRLD (Official Music Video) - Lyrical Lemonade.mp3"
+    mp3: "./audio/Eminem - Godzilla ft. Juice WRLD (Official Music Video) - Lyrical Lemonade.mp3",
   },
   {
     rank: "1",
@@ -512,7 +584,7 @@ const albums = [
     played: "1,200,000,000",
     time: "3:24",
     cover: "https://upload.wikimedia.org/wikipedia/vi/5/5c/Imagine-Dragons-Believer-art.jpg",
-    mp3: "./audio/imagine-dragons-believer-official-music-video-128-ytshorts.savetube.me.mp3"
+    mp3: "./audio/imagine-dragons-believer-official-music-video-128-ytshorts.savetube.me.mp3",
   },
   {
     rank: "2",
@@ -522,7 +594,7 @@ const albums = [
     played: "2,500,000,000",
     time: "3:07",
     cover: "https://i1.sndcdn.com/artworks-000069495641-rx1t0z-t500x500.jpg",
-    mp3: "./audio/"
+    mp3: "./audio/",
   },
   {
     rank: "3",
@@ -532,7 +604,7 @@ const albums = [
     played: "1,800,000,000",
     time: "3:07",
     cover: "https://upload.wikimedia.org/wikipedia/en/2/28/Imagine_Dragons_Thunder.jpg",
-    mp3: "./audio/"
+    mp3: "./audio/",
   },
   {
     rank: "4",
@@ -542,7 +614,7 @@ const albums = [
     played: "1,500,000,000",
     time: "2:57",
     cover: "https://upload.wikimedia.org/wikipedia/vi/2/2b/Imagine_Dragons_-_%22Demons%22_%28Official_Single_Cover%29.jpg",
-    mp3: "./audio/"
+    mp3: "./audio/",
   },
   {
     rank: "5",
@@ -552,7 +624,7 @@ const albums = [
     played: "1,300,000,000",
     time: "3:21",
     cover: "https://i.scdn.co/image/ab67616d0000b2735675e83f707f1d7271e5cf8a",
-    mp3: "./audio/"
+    mp3: "./audio/Imagine_Dragons_-_Whatever_It_Takes_(getmp3.pro).mp3",
   },
   {
     rank: "1",
@@ -562,7 +634,7 @@ const albums = [
     played: "1,500,000,000",
     time: "3:48",
     cover: "https://upload.wikimedia.org/wikipedia/en/7/74/Adele_-_Rolling_in_the_Deep.png",
-    mp3: "./audio/"
+    mp3: "./audio/",
   },
   {
     rank: "2",
@@ -572,7 +644,7 @@ const albums = [
     played: "1,200,000,000",
     time: "4:45",
     cover: "https://upload.wikimedia.org/wikipedia/vi/3/3a/Adele_Someone_Like_You.jpg",
-    mp3: "./audio/"
+    mp3: "./audio/",
   },
   {
     rank: "3",
@@ -582,7 +654,7 @@ const albums = [
     played: "1,800,000,000",
     time: "4:55",
     cover: "https://cdn-images.dzcdn.net/images/cover/938059115e8f91ed8f3454d6edc29e54/0x1900-000000-80-0-0.jpg",
-    mp3: "./audio/"
+    mp3: "./audio/",
   },
   {
     rank: "4",
@@ -592,7 +664,7 @@ const albums = [
     played: "1,000,000,000",
     time: "4:02",
     cover: "https://i1.sndcdn.com/artworks-000069226825-f4rlrf-t500x500.jpg",
-    mp3: "./audio/"
+    mp3: "./audio/",
   },
   {
     rank: "5",
@@ -602,7 +674,7 @@ const albums = [
     played: "800,000,000",
     time: "4:46",
     cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQCfIYgb87PD91l5TNAsjdu9uwLusq0CZCBw&s",
-    mp3: "./audio/"
+    mp3: "./audio/Adele - Skyfall (Official Lyric Video).mp3",
   },
   {
     rank: "1",
@@ -612,7 +684,7 @@ const albums = [
     played: "1,200,000,000",
     time: "4:40",
     cover: "https://i.scdn.co/image/ab67616d00001e02cb76604d9c5963544cf5be64",
-    mp3: "./audio/"
+    mp3: "./audio/",
   },
   {
     rank: "2",
@@ -622,7 +694,7 @@ const albums = [
     played: "900,000,000",
     time: "4:25",
     cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw6lOFu9sJrH0mhM22SK9nIAN2XkQjD76vBQ&s",
-    mp3: "./audio/"
+    mp3: "./audio/",
   },
   {
     rank: "3",
@@ -632,7 +704,7 @@ const albums = [
     played: "800,000,000",
     time: "4:54",
     cover: "https://upload.wikimedia.org/wikipedia/en/2/29/BornToDieAlbumCover.png",
-    mp3: "./audio/"
+    mp3: "./audio/",
   },
   {
     rank: "4",
@@ -642,7 +714,7 @@ const albums = [
     played: "700,000,000",
     time: "3:56",
     cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaNPHhQGpa9KRthZkAAWgtI3G0VsYwkxXs4A&s",
-    mp3: "./audio/"
+    mp3: "./audio/",
   },
   {
     rank: "5",
@@ -652,7 +724,7 @@ const albums = [
     played: "600,000,000",
     time: "4:23",
     cover: "https://upload.wikimedia.org/wikipedia/vi/3/34/Lana_Del_Rey_Lust_for_Life.jpg",
-    mp3: "./audio/"
+    mp3: "./audio/",
   },
   {
     rank: "1",
@@ -662,7 +734,7 @@ const albums = [
     played: "1,800,000,000",
     time: "2:54",
     cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSTQRJ1aVSoYPvG5RuVSTuS_B3bcW-ddWISg&s",
-    mp3: "./audio/"
+    mp3: "./audio/",
   },
   {
     rank: "2",
@@ -672,7 +744,7 @@ const albums = [
     played: "1,600,000,000",
     time: "3:27",
     cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmCzdhgG0QnxNcIIuOIQjyQuwigTwyV-Wpcg&s",
-    mp3: "./audio/"
+    mp3: "./audio/",
   },
   {
     rank: "3",
@@ -682,7 +754,7 @@ const albums = [
     played: "1,400,000,000",
     time: "5:09",
     cover: "https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/Harry_Styles_-_Sign_of_the_Times_%28Official_Single_Cover%29.png/220px-Harry_Styles_-_Sign_of_the_Times_%28Official_Single_Cover%29.png",
-    mp3: "./audio/"
+    mp3: "./audio/",
   },
   {
     rank: "4",
@@ -692,7 +764,7 @@ const albums = [
     played: "1,200,000,000",
     time: "4:00",
     cover: "https://i.pinimg.com/originals/79/23/64/792364707ad0a23f5007b9727a6f07d5.jpg",
-    mp3: "./audio/"
+    mp3: "./audio/",
   },
   {
     rank: "5",
@@ -702,7 +774,7 @@ const albums = [
     played: "2,000,000,000",
     time: "2:47",
     cover: "https://s3.amazonaws.com/media.thecrimson.com/photos/2022/04/04/235936_1355516.jpeg",
-    mp3: "./audio/"
+    mp3: "./audio/",
   },
   {
     rank: "1",
@@ -712,7 +784,7 @@ const albums = [
     played: "1,800,000,000",
     time: "3:14",
     cover: "https://thethaovanhoa.mediacdn.vn/372676912336973824/2023/11/3/bad-guy-16989714925081627622345.jpg",
-    mp3: "./audio/"
+    mp3: "./audio/Billie Eilish - bad guy.mp3",
   },
   {
     rank: "2",
@@ -722,7 +794,7 @@ const albums = [
     played: "1,200,000,000",
     time: "4:05",
     cover: "https://www.udiscovermusic.com/wp-content/uploads/2019/11/Billie-Eilish-Everything-I-Wanted.jpg",
-    mp3: "./audio/"
+    mp3: "./audio/",
   },
   {
     rank: "3",
@@ -732,7 +804,7 @@ const albums = [
     played: "1,000,000,000",
     time: "3:16",
     cover: "https://upload.wikimedia.org/wikipedia/en/1/1f/Billie_Eilish_-_When_the_Party%27s_Over.png",
-    mp3: "./audio/"
+    mp3: "./audio/",
   },
   {
     rank: "4",
@@ -742,7 +814,7 @@ const albums = [
     played: "900,000,000",
     time: "2:54",
     cover: "https://upload.wikimedia.org/wikipedia/en/4/4b/Billie_Eilish_-_Therefore_I_Am.png",
-    mp3: "./audio/"
+    mp3: "./audio/",
   },
   {
     rank: "5",
@@ -752,7 +824,7 @@ const albums = [
     played: "1,500,000,000",
     time: "3:20",
     cover: "https://cdn-images.dzcdn.net/images/cover/d85200712419ae036b277deffeea5181/500x500.jpg",
-    mp3: "./audio/"
+    mp3: "./audio/",
   },
 ];
 

@@ -70,7 +70,7 @@ function App() {
       <main className="content">
         <Routes>
           <Route path="/" element={<Layout setIsLoading={setIsLoading} setCurrentSong={setCurrentSong} setIsPlaying={setIsPlaying} />}>
-            <Route index element={<Home />} />
+            <Route index element={<Home handleSongPlay={handleSongPlay}/>} />
             <Route path="discover" element={<Discover />} />
             <Route path="mostPlayed" element={<MostPlayedHit onSongPlay={handleSongPlay} />} />
             <Route path="recentlyAdded" element={<RecentlyAdded />} />

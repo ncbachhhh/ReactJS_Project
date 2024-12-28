@@ -2,8 +2,10 @@ import React from "react";
 import { FaMusic } from "react-icons/fa"; // Sử dụng biểu tượng âm nhạc từ react-icons
 import "./NewReleaseSongs.css";
 import { NavLink } from "react-router-dom";
+import AlbumsData from "../../Data/AlbumsData";
 
-function NewReleaseSongs() {
+function NewReleaseSongs(props) {
+  const { handleSongPlay } = props;
   // Dữ liệu giả cho danh sách bài hát mới phát hành
   const songs = [
     {
@@ -40,7 +42,14 @@ function NewReleaseSongs() {
       </h2>
       <div className="new-release-songs-list">
         {songs.map((song, index) => (
-          <div className="song-item" key={index}>
+          <div
+            className="song-item"
+            key={index}
+            onClick={() => {
+              console.log(AlbumsData.filter((item) => item.title === song.title));
+              handleSongPlay(AlbumsData.filter((item) => item.title === song.title)[0]);
+            }}
+          >
             <img src={song.cover} alt={song.title} className="song-cover" />
             <div className="song-info">
               <h3 className="song-title">{song.title}</h3>

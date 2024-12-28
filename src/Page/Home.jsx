@@ -9,7 +9,8 @@ import TopAlbums from "../Components/TopAlbums/TopAlbums";
 import MoodPlaylists from "../Components/MoodPlaylists/MoodPlaylists";
 import JoinOurPlatform from "../Components/JoinOurPlatform/JoinOurPlatform";
 
-function Home() {
+function Home(props) {
+  const {handleSongPlay} = props;
   const specialAccount = {
     username: "admin",
     email: "admin@gmail.com",
@@ -18,7 +19,7 @@ function Home() {
     id: "admin",
     premium: "Pro",
   };
-  
+
   // check key trong local
   if (localStorage.getItem("list_User") === null) {
     localStorage.setItem("list_User", JSON.stringify([specialAccount]));
@@ -29,11 +30,10 @@ function Home() {
   }
   return (
     <div>
-      <Hero />
-      <SongList />
-      <NewReleaseSongs />
-      <TrendingSongs />
-      <PopularArtists />
+      <Hero handleSongPlay={handleSongPlay}/>
+      <SongList handleSongPlay={handleSongPlay}/>
+      <NewReleaseSongs handleSongPlay={handleSongPlay}/>
+      <TrendingSongs handleSongPlay={handleSongPlay}/>
       <MusicVideo />
       <TopAlbums />
       <MoodPlaylists />

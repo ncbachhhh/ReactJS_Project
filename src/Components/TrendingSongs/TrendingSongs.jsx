@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { FaHeart } from "react-icons/fa"; // Sử dụng biểu tượng trái tim từ react-icons
 import "./TrendingSongs.css"; // Đảm bảo rằng đã import CSS file
 import SongsData from "../../Data/SongsData";
+import AlbumsData from "../../Data/AlbumsData";
 
-function TrendingSongs() {
+function TrendingSongs(props) {
+  const { handleSongPlay } = props;
   // State để kiểm tra trạng thái hiển thị tất cả bài hát hay không
   const [showAll, setShowAll] = useState(false);
 
@@ -33,7 +35,13 @@ function TrendingSongs() {
           </thead>
           <tbody>
             {displayedSongs.map((song, index) => (
-              <tr key={index}>
+              <tr
+                key={index}
+                onClick={() => {
+                  console.log(AlbumsData.filter((item) => item.title === song.title));
+                  handleSongPlay(AlbumsData.filter((item) => item.title === song.title)[0]);
+                }}
+              >
                 <td className="rounded-left">{song.rank}</td>
                 <td>
                   <div className="song-info-trending">

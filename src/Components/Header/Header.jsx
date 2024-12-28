@@ -5,9 +5,7 @@ import AlbumsData from "../../Data/AlbumsData";
 import "./Header.css";
 
 function Header({ setIsLoading, setCurrentSong, setIsPlaying }) {
-  const [loginStatus, setLoginStatus] = useState(
-    JSON.parse(localStorage.getItem("loginStatus"))
-  );
+  const [loginStatus, setLoginStatus] = useState(JSON.parse(localStorage.getItem("loginStatus")));
   const [searchValue, setSearchValue] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
@@ -29,9 +27,7 @@ function Header({ setIsLoading, setCurrentSong, setIsPlaying }) {
   useEffect(() => {
     const timeout = setTimeout(() => {
       if (searchValue.trim() !== "") {
-        const filteredSongs = AlbumsData.filter((song) =>
-          song.title.toLowerCase().includes(searchValue.toLowerCase())
-        );
+        const filteredSongs = AlbumsData.filter((song) => song.title.toLowerCase().includes(searchValue.toLowerCase()));
         setSearchResults(filteredSongs);
         setIsSearchModalOpen(true);
       } else {
@@ -82,13 +78,7 @@ function Header({ setIsLoading, setCurrentSong, setIsPlaying }) {
     <header className="header">
       <div className="search-container">
         <FaSearch className="search-icon" />
-        <input
-          type="text"
-          placeholder="Search For Musics, Artists, Albums..."
-          className="search-bar"
-          value={searchValue}
-          onChange={(e) => setSearchValue(e.target.value)}
-        />
+        <input type="text" placeholder="Search For Musics, Artists, Albums..." className="search-bar" value={searchValue} onChange={(e) => setSearchValue(e.target.value)} />
       </div>
 
       {isSearchModalOpen && (
@@ -109,11 +99,7 @@ function Header({ setIsLoading, setCurrentSong, setIsPlaying }) {
                 {searchResults.map((song, index) => (
                   <li key={index} onClick={() => handleSongSelect(song)}>
                     <div className="header-song-item">
-                      <img
-                        src={song.cover}
-                        alt={song.title}
-                        className="header-song-cover"
-                      />
+                      <img src={song.cover} alt={song.title} className="header-song-cover" />
                       <div className="header-song-details">
                         <h3>{song.title}</h3>
                         <p>{song.artist}</p>
@@ -123,37 +109,24 @@ function Header({ setIsLoading, setCurrentSong, setIsPlaying }) {
                 ))}
               </ul>
             ) : (
-              <p className="no-results-message">
-                Không có dữ liệu. Hãy thử từ khóa khác!
-              </p>
+              <p className="no-results-message">Không có dữ liệu. Hãy thử từ khóa khác!</p>
             )}
           </div>
         </div>
       )}
 
       <div className="nav-links">
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
         <NavLink to="/premium">Premium</NavLink>
         {loginStatus ? (
           <div className="avatar">
-            <i
-              className="fa-solid fa-circle-user"
-              style={{ cursor: "pointer" }}
-            ></i>
+            <i className="fa-solid fa-circle-user" style={{ cursor: "pointer" }}></i>
           </div>
         ) : (
           <>
-            <button
-              className="login-btn"
-              onClick={() => handleNavigate("/login")}
-            >
+            <button className="login-btn" onClick={() => handleNavigate("/login")}>
               Login
             </button>
-            <button
-              className="signup-btn"
-              onClick={() => handleNavigate("/signup")}
-            >
+            <button className="signup-btn" onClick={() => handleNavigate("/signup")}>
               Sign Up
             </button>
           </>
